@@ -122,11 +122,9 @@ This software is licensed under the MIT license.
 ```sql
 
 
-CREATE DATABASE epicodus
-
-USE epicodus
-
-DROP TABLE IF EXISTS students;
+CREATE DATABASE epicodus;
+GO
+USE epicodus;
 
 CREATE TABLE students (
   id INTEGER NOT NULL IDENTITY(1,1),
