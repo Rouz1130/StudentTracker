@@ -19,6 +19,7 @@
       </div>
     </section>
       <div class="container section-container">
+<<<<<<< HEAD
         <div class="jb-float-left">
           <img class="pictureOnStudentPage"src="@Model["student"].GetPicture()" />
         </div>
@@ -82,6 +83,69 @@
               }
               </tbody>
             </table ><br><br>
+=======
+
+    <h1>@Model["student"].GetFName()</h1>
+
+    </form>
+    <hr>
+    <form class="form-inline" action='/update/@Model["student"].GetId()' method="post">
+      <div class="form-group">
+        <label for="fname">First Name:</label>
+        <input type="text" class="form-control" id="fname" name="fname" value='@Model["student"].GetFName()'>
+      </div>
+      <div class="form-group">
+        <label for="lname">Last Name:</label>
+        <input type="text" class="form-control" id="lname" name="lname" value='@Model["student"].GetLName()'>
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" id="email" name="email" value='@Model["student"].GetEmail()'>
+      </div>
+      <div>
+        <label for="picture">Picture file name:</label>
+        <input type="url" class="form-control" id="picture" name="picture" value='@Model["student"].GetPicture()'>
+      </div>
+      <div>
+        <label for="startDate">Start Date:</label>
+        <input type="date" class="form-control" id="startDate" name="startDate" >
+      </div>
+      <button type="submit" class="btn btn-primary" >Update This Student</button>
+    </form>
+  </section>
+
+
+    <section class="module parallax parallax-1">
+      <div class="container">
+        <h1 id="brand"></h1>
+      </div>
+    </section>
+
+    </div>
+
+
+
+    <div class="container section-container">
+
+
+    <h/>
+    <h2>Courses</h2>
+    <table class="stupid">
+      <thead>
+        <tr>
+          <th data-sort="string">Course Name</th>
+          <th data-sort="string">Course Status</th>
+          <th> </th>
+        </tr>
+      </thead>
+      <tbody>
+      @foreach(var course in Model["courseList"] )
+      {
+        <tr>
+          <td><a href='/course/@course.GetId()'>@course.GetName() </a></td>
+          <td>@course.GetActive()</td>
+          <td>
+>>>>>>> a9e03a15b333184f9591907b50afc8567cd9941c
             <form class="form-inline" action='/student/@Model["student"].GetId()' method="post">
               <input type="hidden" name="_method" value="PATCH">
                 <select name="id" class="form-control">
@@ -144,6 +208,7 @@
           </div>
         </div>
       </div>
+<<<<<<< HEAD
       </section>
       <section class="module parallax parallax-1">
         <div class="container">
@@ -160,5 +225,13 @@
           <h1 id="brand"></h1>
         </div>
       </section>
+=======
+    </section>
+
+    <div class="return">
+      <button type="button" name="button"></button></b><h2><a href="/"> Return Home</a></h2>
+    </div>
+
+>>>>>>> a9e03a15b333184f9591907b50afc8567cd9941c
   </body>
 </html>
