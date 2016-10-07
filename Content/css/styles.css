@@ -126,9 +126,7 @@ section.module.content{
 .popup_visible #slide2 {
   transform: translateX(0) translateY(0);
 }
-#project-btn{
-  margin-top: 20px;
-}
+
 /**********************************
 ***Pop Up Slider
 ***********************************/
@@ -310,8 +308,4 @@ section.module.content{
 
 .return {
   text-align: center;
-}
-
-#updateStudent-btn {
-  margin-top: 20px;
 }
